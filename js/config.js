@@ -2,12 +2,12 @@
    YOUR BUSINESS DETAILS — edit these and the whole site updates.
    ========================================================= */
 window.SITE = {
-  businessName: "Your Business Name",
+  businessName: "WM Concreting & Landscaping",
   tagline: "Concreting & Landscaping",
-  phone: "0400 000 000",              // shown on the site + used for the Call button
-  whatsapp: "61400000000",            // international format, no + or spaces (Australia = 61, drop the leading 0)
-  email: "hello@yourbusiness.com.au",
-  serviceArea: "Your City & surrounding suburbs",
+  phone: "0414 233 639",              // shown on the site + used for the Call button
+  whatsapp: "61414233639",            // international format, no + or spaces (Australia = 61, drop the leading 0)
+  email: "WM.decorative.concrete@gmail.com",
+  serviceArea: "All of Victoria",
   hours: "Mon – Sat, 7am – 6pm",
   abn: "",                            // optional, e.g. "ABN 12 345 678 901"
   whatsappMessage: "Hi! I found your website and I'd like a quote for ",
