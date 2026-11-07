@@ -1,0 +1,12 @@
+{
+  "name": "concreting-landscaping-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/build.mjs && npx --yes serve dist"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}

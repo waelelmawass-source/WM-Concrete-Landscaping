@@ -1,0 +1,2 @@
+Put your photos for this service in this folder (.jpg or .png).
+This note is ignored by the website.

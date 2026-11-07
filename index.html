@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concreting &amp; Landscaping | Free Quotes</title>
+  <meta name="description" content="Concreting and landscaping: driveways, council crossovers, slabs, decorative concrete, synthetic and natural turf, retaining walls, Merbau and composite decking, water features. Free quotes.">
+  <meta name="theme-color" content="#1f2421">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img src="images/favicon.svg" alt="" class="brand-mark" width="36" height="36">
+      <span class="brand-text">
+        <strong data-bind="businessName">Your Business Name</strong>
+        <small data-bind="tagline">Concreting &amp; Landscaping</small>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#visualiser">AI Visualiser</a>
+      <a href="#contact">Contact</a>
+      <a href="#quote" class="btn btn-primary btn-sm">Free Quote</a>
+    </nav>
+    <a class="header-call" data-link="phone" aria-label="Call us">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+      <span data-bind="phone">0400 000 000</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow eyebrow-light">Concreting · Landscaping · <span data-bind="serviceArea">Your area</span></p>
+      <h1>Built solid.<br><span>Finished beautifully.</span></h1>
+      <p class="lead">From driveways, crossovers and slabs to turf, decks and water features, we build outdoor spaces that look great and last.</p>
+      <div class="hero-cta">
+        <a href="#quote" class="btn btn-primary btn-lg">Get a free quote</a>
+        <a class="btn btn-wa btn-lg" data-link="whatsapp">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+          WhatsApp us
+        </a>
+      </div>
+      <ul class="hero-points">
+        <li>Free, no-obligation quotes</li>
+        <li>Residential &amp; commercial</li>
+        <li>Send photos for a fast estimate</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">What we do</p>
+        <h2>Our services</h2>
+        <p>One team for the hard and soft landscaping, so your concrete, turf, walls and garden all come together as one job.</p>
+      </header>
+      <div class="service-groups">
+        <div class="service-group">
+          <div class="group-title group-landscaping"><span class="group-dot"></span><h3>Landscaping</h3></div>
+          <div class="service-list" id="services-landscaping"></div>
+        </div>
+        <div class="service-group">
+          <div class="group-title group-concrete"><span class="group-dot"></span><h3>Concrete</h3></div>
+          <div class="service-list" id="services-concrete"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="work" class="section section-alt">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">Our work</p>
+        <h2>Recent projects</h2>
+        <p>A selection of jobs we've completed. Tap any photo to view it full size.</p>
+      </header>
+      <div class="filters" id="groupFilters" role="tablist">
+        <button class="chip is-active" data-filter="all">All work</button>
+        <button class="chip" data-filter="group:landscaping">Landscaping</button>
+        <button class="chip" data-filter="group:concrete">Concrete</button>
+      </div>
+      <div class="filters filters-sub" id="catFilters"></div>
+      <div class="gallery" id="gallery"></div>
+      <div class="gallery-empty" id="galleryEmpty" hidden>
+        <p><strong>Project photos coming soon.</strong></p>
+        <p>Want to see examples of a specific job? Message us and we'll send some through.</p>
+        <a class="btn btn-wa" data-link="whatsapp">Ask on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI VISUALISER -->
+  <section id="visualiser" class="section section-dark">
+    <div class="container">
+      <header class="section-head section-head-light">
+        <p class="eyebrow eyebrow-light">New · AI Visualiser</p>
+        <h2>See it before we build it</h2>
+        <p>Upload a photo of your yard, driveway or garden, tell us what you'd like, and our AI will create a concept image of how it could look.</p>
+      </header>
+
+      <div class="viz">
+        <form class="viz-form" id="vizForm">
+          <label class="dropzone" id="vizDrop">
+            <input type="file" id="vizFile" accept="image/*">
+            <img id="vizPreview" alt="" hidden>
+            <span class="dropzone-text" id="vizDropText">
+              <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true"><path fill="currentColor" d="M19 7v2.99s-1.99.01-2 0V7h-3s.01-1.99 0-2h3V2h2v3h3v2h-3Zm-3 4V8h-3V5H5a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2v-8h-3ZM5 19l3-4 2 3 3-4 4 5H5Z"/></svg>
+              <strong>1. Upload a photo</strong>
+              <small>Tap to take or choose a photo of the area</small>
+            </span>
+          </label>
+
+          <label class="field-label" for="vizPrompt">2. Describe what you want</label>
+          <textarea id="vizPrompt" rows="3" maxlength="500" placeholder="e.g. Replace the grass with synthetic turf, add a sleeper retaining wall with a garden bed along the back fence"></textarea>
+          <div class="ideas" id="vizIdeas" aria-label="Ideas">
+            <button type="button" class="idea">Synthetic turf lawn</button>
+            <button type="button" class="idea">Exposed aggregate driveway</button>
+            <button type="button" class="idea">Merbau deck with steps</button>
+            <button type="button" class="idea">Sleeper retaining wall and garden bed</button>
+            <button type="button" class="idea">Floating concrete steps</button>
+            <button type="button" class="idea">Modern water feature wall</button>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block" id="vizBtn">Generate my design</button>
+          <p class="viz-status" id="vizStatus" role="status" aria-live="polite"></p>
+          <p class="fine-print">AI concepts are for inspiration only. Final designs, materials and pricing are confirmed on-site.</p>
+        </form>
+
+        <div class="viz-result" id="vizResult">
+          <div class="viz-tabs" id="vizTabs" hidden>
+            <button type="button" class="chip chip-dark is-active" data-show="after">AI concept</button>
+            <button type="button" class="chip chip-dark" data-show="before">Original</button>
+          </div>
+          <div class="viz-canvas" id="vizCanvas">
+            <div class="viz-placeholder" id="vizPlaceholder">
+              <span>Your design will appear here</span>
+            </div>
+            <img id="vizAfter" alt="AI-generated concept" hidden>
+            <img id="vizBefore" alt="Your original photo" hidden>
+            <div class="viz-loading" id="vizLoading" hidden><span class="spinner"></span><span>Designing… this can take up to 30 seconds</span></div>
+          </div>
+          <div class="viz-actions" id="vizActions" hidden>
+            <a class="btn btn-ghost-light" id="vizDownload" download="my-design.png">Download image</a>
+            <button type="button" class="btn btn-primary" id="vizQuote">Get a quote for this</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote" class="section">
+    <div class="container quote-wrap">
+      <div class="quote-intro">
+        <p class="eyebrow">Free quote</p>
+        <h2>Tell us about your job</h2>
+        <p>The more detail and photos you send, the more accurate your quote. We usually reply within one business day.</p>
+        <ul class="ticks">
+          <li>Describe the job and rough size</li>
+          <li>Attach up to 4 photos</li>
+          <li>We'll call or email you back</li>
+        </ul>
+        <div class="quote-alt">
+          <p>Prefer to chat?</p>
+          <a class="btn btn-wa" data-link="whatsapp">WhatsApp us</a>
+          <a class="btn btn-outline" data-link="phone">Call <span data-bind="phone"></span></a>
+        </div>
+      </div>
+
+      <form class="quote-form card" id="quoteForm" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" novalidate>
+        <input type="hidden" name="form-name" value="quote">
+        <p class="hidden-field"><label>Leave empty: <input name="bot-field"></label></p>
+        <input type="hidden" name="services" id="qServices">
+        <!-- photo fields (filled automatically, compressed in the browser) -->
+        <input type="file" name="photo1" class="hidden-field" tabindex="-1" aria-hidden="true">
+        <input type="file" name="photo2" class="hidden-field" tabindex="-1" aria-hidden="true">
+        <input type="file" name="photo3" class="hidden-field" tabindex="-1" aria-hidden="true">
+        <input type="file" name="photo4" class="hidden-field" tabindex="-1" aria-hidden="true">
+
+        <fieldset>
+          <legend>What do you need?</legend>
+          <div class="svc-picks" id="svcPicks"></div>
+        </fieldset>
+
+        <div class="field">
+          <label for="qDesc">Describe the job <span class="req">*</span></label>
+          <textarea id="qDesc" name="description" rows="5" required placeholder="e.g. Remove old lawn at the front and lay synthetic turf. Also want a new exposed aggregate driveway, about 6m x 12m."></textarea>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="qSize">Approximate size</label>
+            <input id="qSize" name="size" placeholder="e.g. 6m x 8m, or 50 m²">
+          </div>
+          <div class="field">
+            <label for="qWhen">When do you need it?</label>
+            <select id="qWhen" name="timeframe">
+              <option value="">Select…</option>
+              <option>As soon as possible</option>
+              <option>Within 1 month</option>
+              <option>1 – 3 months</option>
+              <option>3+ months / just planning</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Photos of the area <span class="muted">(up to 4)</span></label>
+          <label class="photo-picker">
+            <input type="file" id="qPhotoPicker" accept="image/*" multiple>
+            <span>+ Add photos</span>
+          </label>
+          <div class="photo-thumbs" id="qThumbs"></div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="qName">Your name <span class="req">*</span></label>
+            <input id="qName" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="qSuburb">Suburb <span class="req">*</span></label>
+            <input id="qSuburb" name="suburb" autocomplete="address-level2" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="qAddress">Street address <span class="muted">(optional)</span></label>
+          <input id="qAddress" name="address" autocomplete="street-address">
+        </div>
+        <div class="grid-2">
+          <div class="field">
+            <label for="qPhone">Phone</label>
+            <input id="qPhone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="qEmail">Email</label>
+            <input id="qEmail" name="email" type="email" autocomplete="email">
+          </div>
+        </div>
+        <p class="hint">Please give us a phone number or an email (or both).</p>
+
+        <div class="field">
+          <label>Best way to contact you</label>
+          <div class="radios">
+            <label><input type="radio" name="contact_method" value="Phone call" checked> Phone call</label>
+            <label><input type="radio" name="contact_method" value="WhatsApp / SMS"> WhatsApp / SMS</label>
+            <label><input type="radio" name="contact_method" value="Email"> Email</label>
+          </div>
+        </div>
+
+        <p class="form-error" id="qError" role="alert" hidden></p>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="qSubmit">Send quote request</button>
+      </form>
+
+      <div class="quote-success card" id="quoteSuccess" hidden>
+        <div class="success-icon">✓</div>
+        <h3>Thanks, we've got your request!</h3>
+        <p>We'll be in touch shortly. Want a faster reply? Send us a quick message on WhatsApp too.</p>
+        <a class="btn btn-wa" id="successWa" target="_blank" rel="noopener">Message us on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Get in touch</h2>
+      </header>
+      <div class="contact-grid">
+        <a class="contact-card" data-link="whatsapp">
+          <span class="contact-icon wa">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+          </span>
+          <strong>WhatsApp</strong><span>Send photos &amp; chat</span>
+        </a>
+        <a class="contact-card" data-link="phone">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+          </span>
+          <strong>Call</strong><span data-bind="phone"></span>
+        </a>
+        <a class="contact-card" data-link="email">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
+          </span>
+          <strong>Email</strong><span data-bind="email"></span>
+        </a>
+        <div class="contact-card">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
+          </span>
+          <strong>Service area</strong><span data-bind="serviceArea"></span><span class="muted" data-bind="hours"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong data-bind="businessName">Your Business Name</strong>
+      <p data-bind="tagline">Concreting &amp; Landscaping</p>
+      <p class="muted" data-bind="abn"></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#visualiser">AI Visualiser</a>
+      <a href="#quote">Free Quote</a>
+      <a data-link="instagram" hidden>Instagram</a>
+      <a data-link="facebook" hidden>Facebook</a>
+    </nav>
+    <p class="muted copyright">© <span id="year"></span> <span data-bind="businessName"></span>. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="wa-float" data-link="whatsapp" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
