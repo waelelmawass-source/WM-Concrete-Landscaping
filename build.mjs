@@ -13,7 +13,8 @@ const IMG = /\.(jpe?g|png|webp|avif|tiff?|heic|heif)$/i;
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
 for (const p of ["index.html", "css", "js", "images"]) {
-  await cp(path.join(root, p), path.join(dist, p), { recursive: true });
+  await cp(path.join(root, p), path.join(dist, p), { recursive: true })
+    .catch(err => console.warn(`! Could not copy ${p}: ${err.message}`));
 }
 
 let sharp = null;
@@ -33,7 +34,7 @@ const galleryDir = path.join(root, "gallery");
 const folders = (await readdir(galleryDir, { withFileTypes: true }).catch(() => [])).filter(d => d.isDirectory()).map(d => d.name).sort();
 
 for (const cat of folders) {
-  const files = (await readdir(path.join(galleryDir, cat))).filter(f => IMG.test(f)).sort();
+  const files = (await readdir(path.join(galleryDir, cat)).catch(() => [])).filter(f => IMG.test(f)).sort();
   if (!files.length) continue;
   const outDir = path.join(dist, "gallery", cat);
   await mkdir(outDir, { recursive: true });
