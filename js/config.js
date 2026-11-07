@@ -8,7 +8,7 @@ window.SITE = {
   whatsapp: "61414233639",            // international format, no + or spaces (Australia = 61, drop the leading 0)
   email: "WM.decorative.concrete@gmail.com",
   serviceArea: "All of Victoria",
-  hours: "Mon – Sat, 7am – 6pm",
+  hours: "Available 24/7",
   abn: "",                            // optional, e.g. "ABN 12 345 678 901"
   whatsappMessage: "Hi! I found your website and I'd like a quote for ",
   instagram: "",                      // optional full URL
